@@ -12,7 +12,6 @@ def start():
 	mylcd.lcd_display_string("Tap Your Card",2)
 	Tag1 = str('6D003E1A1A53')
 	PortRF = serial.Serial('//dev/ttyUSB0',9600)
-        Log = ""
 	while True:
 		ID = ""
 		read_byte = PortRF.read()
